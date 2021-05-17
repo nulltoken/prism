@@ -241,6 +241,11 @@ export const httpOperations: IHttpOperation[] = [
           style: HttpParamStyles.Form,
           schema: { type: 'string', pattern: '^(yes|no)$' },
         },
+        {
+          name: 'due-date',
+          style: HttpParamStyles.Form,
+          schema: { type: 'string', format: 'date-time' },
+        },
       ],
       headers: [
         {
